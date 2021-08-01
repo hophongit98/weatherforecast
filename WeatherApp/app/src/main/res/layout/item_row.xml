@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:id="@+id/rlRoot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="1dp"
+                android:textColor="@color/text_color_light"
+                android:textSize="18sp"
+                tools:text="Date: Tue, 10 Mar 2020" />
+
+            <TextView
+                android:id="@+id/tvAvgTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:textColor="@color/text_color_light"
+                android:textSize="14sp"
+                tools:text="Average temperature: 20 C" />
+
+            <TextView
+                android:id="@+id/tvPressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:textColor="@color/text_color_light"
+                android:textSize="14sp"
+                tools:text="Pressure: 1031" />
+
+            <TextView
+                android:id="@+id/tvHumidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:textColor="@color/text_color_light"
+                android:textSize="14sp"
+                tools:text="Pressure: 70%" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:textColor="@color/text_color_light"
+                android:textSize="14sp"
+                tools:text="Description: light rain" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

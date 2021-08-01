@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llRoot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etLocation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Search" />
+
+            <Button
+                android:id="@+id/btnSeach"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Get Weather"
+                android:textAllCaps="false" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvWeather"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pbLoading"
+            style="@style/LoadingBar"
+            android:visibility="visible" />
+
+    </FrameLayout>
+</layout>
